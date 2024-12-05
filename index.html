@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing Suite</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Image Processing Suite</h1>
+    </header>
+
+    <div class="button-bar">
+        <button class="go-btn" id="go-button">Go</button>
+        <button class="blue-btn" id="convert-button">Convert to JPG</button>
+        <button class="blue-btn" id="resize-button">Resize to 3840x2160</button>
+        <button class="blue-btn" id="compress-button">Compress Image</button>
+    </div>
+
+    <input type="file" id="file-input" accept="image/*" multiple>
+    <label for="file-input" id="upload-label">Upload Images</label>
+
+    <div id="preview-container"></div>
+    <canvas id="canvas"></canvas>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
